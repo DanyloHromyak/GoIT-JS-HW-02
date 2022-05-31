@@ -27,3 +27,4 @@ styles.splice(1, 1, "Класика");
 console.log(styles.shift());
 styles.unshift("Реп", "Реггі");
 console.log(styles);
+

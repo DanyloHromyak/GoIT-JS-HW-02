@@ -1,22 +1,22 @@
 // Завдання 1
-const hello1 = () => {
-  console.log("Hello, JavaScript");
+const hello1 = function() {
+  return console.log("Hello, JavaScript");
 };
 
 hello1();
 
 // Завдання 2
-const hello2 = (name = "Данило") => {
-  console.log("hello, " + name);
+const hello2 = function(name = "Данило") {
+  console.log(`Hello, ${name}`);
 };
 
 hello2("Василь");
 
 // Завдання 3
-const mul = (n = 0, m = 0) => {
-  console.log(n * m);
-  console.log(n + m);
-  console.log(n - m);
+const mul = function(n = 0, m = 0) {
+  console.log(`${n * m} - Добуток`);
+  console.log(`${n + m} - Сума`);
+  console.log(`${n - m} - Різниця`);
 };
 
 mul(5, 1);

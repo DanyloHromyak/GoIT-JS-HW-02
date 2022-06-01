@@ -54,10 +54,10 @@ const myAverageScore = (scores) => {
   else {
     grade = "D";
   }
-  console.log(`your score is ${grade}`);
+  return `Your score is: ${averageScore}. Your grade is: ${grade}`;
 };
 
-myAverageScore([100, 75, 81, 96]);
-myAverageScore([45, 63, 85, 70]);
-myAverageScore([77, 82, 60, 58]);
-myAverageScore([93, 99, 93, 96]);
+console.log(myAverageScore([100, 75, 81, 96]));
+console.log(myAverageScore([45, 63, 85, 70]));
+console.log(myAverageScore([77, 82, 60, 58]));
+console.log(myAverageScore([93, 99, 93, 96]));

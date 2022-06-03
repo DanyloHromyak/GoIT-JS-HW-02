@@ -1,19 +1,15 @@
 // Завдання 1
-const hello1 = function () {
-  return console.log("Hello, JavaScript");
-};
+const hello1 = () => console.log("Hello, JavaScript");
 
 hello1();
 
 // Завдання 2
-const hello2 = function (name = "Данило") {
-  console.log(`Hello, ${name}`);
-};
+const hello2 = name => console.log(`Hello, ${name}`);
 
 hello2("Василь");
 
 // Завдання 3
-const mul = function (n = 0, m = 0) {
+const mul = (n = 0, m = 0) => {
   console.log(`${n * m} - Добуток`);
   console.log(`${n + m} - Сума`);
   console.log(`${n - m} - Різниця`);
@@ -22,16 +18,14 @@ const mul = function (n = 0, m = 0) {
 mul(5, 1);
 
 // Завдання 4
-const myNewArrowFunction = (...rest) => {
-  console.log(rest);
-};
+const myNewArrowFunction = (...rest) => console.log(rest);
 
 myNewArrowFunction(1, 2, 3);
 myNewArrowFunction(100, 200, 300, 400, 500);
 myNewArrowFunction("Js", "Python", "Java", "PHP", "C++");
 
 // Завдання 5
-const myAverageScore = (scores) => {
+const myAverageScore = scores => {
   let averageScore = 0;
   let grade = 0;
   for (let i = 0; i < scores.length; i++) {

@@ -1,19 +1,19 @@
 // Завдання 1
-const hello1 = function() {
+const hello1 = function () {
   return console.log("Hello, JavaScript");
 };
 
 hello1();
 
 // Завдання 2
-const hello2 = function(name = "Данило") {
+const hello2 = function (name = "Данило") {
   console.log(`Hello, ${name}`);
 };
 
 hello2("Василь");
 
 // Завдання 3
-const mul = function(n = 0, m = 0) {
+const mul = function (n = 0, m = 0) {
   console.log(`${n * m} - Добуток`);
   console.log(`${n + m} - Сума`);
   console.log(`${n - m} - Різниця`);
@@ -41,17 +41,13 @@ const myAverageScore = (scores) => {
   averageScore = averageScore / scores.length;
   if (averageScore > 100) {
     grade = "S";
-  } 
-  else if (averageScore > 90 && averageScore <= 100) {
+  } else if (averageScore > 90 && averageScore <= 100) {
     grade = "A";
-  } 
-  else if (averageScore > 80 && averageScore <= 90) {
+  } else if (averageScore > 80 && averageScore <= 90) {
     grade = "B";
-  } 
-  else if (averageScore > 70 && averageScore <= 80) {
+  } else if (averageScore > 70 && averageScore <= 80) {
     grade = "C";
-  } 
-  else {
+  } else {
     grade = "D";
   }
   return `Your score is: ${averageScore}. Your grade is: ${grade}`;

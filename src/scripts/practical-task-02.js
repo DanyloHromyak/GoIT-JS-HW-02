@@ -27,10 +27,9 @@ myNewArrowFunction("Js", "Python", "Java", "PHP", "C++");
 // Завдання 5
 const myAverageScore = scores => {
   let averageScore = 0;
-  let grade = 0;
+  let grade = "D";
   for (let i = 0; i < scores.length; i++) {
-    let currentScore = scores[i];
-    averageScore += currentScore;
+    averageScore += scores[i];
   }
   averageScore = averageScore / scores.length;
   if (averageScore > 100) {
@@ -41,9 +40,7 @@ const myAverageScore = scores => {
     grade = "B";
   } else if (averageScore > 70 && averageScore <= 80) {
     grade = "C";
-  } else {
-    grade = "D";
-  }
+  } 
   return `Your score is: ${averageScore}. Your grade is: ${grade}`;
 };
 
@@ -51,4 +48,3 @@ console.log(myAverageScore([100, 75, 81, 96]));
 console.log(myAverageScore([45, 63, 85, 70]));
 console.log(myAverageScore([77, 82, 60, 58]));
 console.log(myAverageScore([93, 99, 93, 96]));
-

@@ -111,7 +111,7 @@ const isLoginValid = login => login.length >= 4 && login.length <= 16;
 
 const isLoginUnique = (allLogins, login) => allLogins.indexOf(login) === -1;
 
-const addLogin = function (allLogins, login) {
+const addLogin = (allLogins, login) => {
   if (!isLoginValid(login)) return "Помилка! Логін повинен бути від 4 до 16 символів";
   if (!isLoginUnique(logins, login)) return "Такий логін уже використовується!";
   allLogins.push(login);

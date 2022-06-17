@@ -77,8 +77,7 @@ console.log(
 // Завдання 5
 const checkForSpam = message =>
   message.toLowerCase().includes("spam") ||
-  message.toLowerCase().includes("sale")
-
+  message.toLowerCase().includes("sale");
 
 console.log(checkForSpam("Latest technology news"));
 console.log(checkForSpam("JavaScript weekly newsletter"));
@@ -90,28 +89,20 @@ let input;
 const numbers = [];
 let total = 0;
 
-const calculateTotal = () => {
-  for (
-    input = prompt("Введіть число");
-    input != null;
-    input = prompt("Введіть число")
-  ) {
-    if (!isNaN(input) && input !== "") numbers.push(parseInt(input));
-    else alert("Введіть число");
-  }
+while (true) {
+  input = prompt("Введіть число");
 
-  for (const number of numbers) {
-    total += number;
-  }
+  if (!isNaN(input) && input !== "") numbers.push(Number(input));
+  else alert("Введіть число");
 
-  if (total !== 0) {
+  if (input === null) {
+    for (const number of numbers) {
+      total += number;
+    }
     console.log(`Загальна сума дорівнює ${total}`);
-  } else {
-    console.log("Скасовано користувачем!");
+    break;
   }
-};
-
-calculateTotal();
+}
 
 // Завдання 7
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
